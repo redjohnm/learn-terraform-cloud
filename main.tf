@@ -1,6 +1,12 @@
+
 provider "aws" {
-  region = var.region
+  region = "us-west-2"
 }
+//provider "aws" {
+//  shared_credentials_file = "/home/johnmcmanusbsc/.aws/credentials"
+//  region = var.region
+//}
+
 
 data "aws_ami" "ubuntu" {
   most_recent = true
